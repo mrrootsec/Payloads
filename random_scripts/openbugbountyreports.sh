@@ -6,7 +6,7 @@ reset=`tput sgr0`
 bold=`tput bold`
 
 # Pulling Reported Vulnerbilities from OpenBugBounty Community.
-	read -p "$bold$green[+] - Please Provide filename: $reset" fname
+	read -p "$bold$green[+] - Please Provide filename contains list of domains: $reset" fname
 
 	for domain in $(cat $fname); do 
 	   echo "$bold$green[+] - Looking for Reports in OpenBugBounty for $domain$reset"
